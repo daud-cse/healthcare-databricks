@@ -1,0 +1,14 @@
+{
+  "name": "dev_patient_ingest",
+  "tasks": [
+    {
+      "task_key": "ingest_task",
+      "notebook_task": {
+        "notebook_path": "/Shared/dev/ingest_patient", 
+        "base_parameters": {}
+      },
+      "existing_cluster_id": "${DB_CLUSTER_ID}"
+    }
+  ],
+  "max_retries": 1
+}
